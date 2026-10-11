@@ -1,0 +1,49 @@
+Received: from AM9PR02MB1234.eurprd02.prod.outlook.com (2603:10a6:20b:3c1::12)
+ by DB9PR02MB5678.eurprd02.prod.outlook.com with HTTPS; Tue, 13 Oct 2026
+ 09:20:33 +0000
+From: David Chen <david.chen@contoso.com>
+To: Tim Wang <tim.mailer@outlook.com>
+Subject: RE: Intro from Tim
+Thread-Topic: Intro from Tim
+Thread-Index: AQHdA1B2C3D4E5F6G7H8I9J0KLMNOP==
+Date: Tue, 13 Oct 2026 09:20:31 +0000
+Message-ID: <AM9PR02MB1234ABCDEF0123456789AB@AM9PR02MB1234.eurprd02.prod.outlook.com>
+References: <am-55aa66bb@outlook.com>
+In-Reply-To: <am-55aa66bb@outlook.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-GB
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Content-Type: multipart/alternative;
+	boundary="_000_AM9PR02MB1234ABCDEF0123456789ABAM9PR02MB1234eurp_"
+MIME-Version: 1.0
+
+--_000_AM9PR02MB1234ABCDEF0123456789ABAM9PR02MB1234eurp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Tim,
+
+Not right now, but try me again in January.
+
+David
+
+________________________________
+From: Tim Wang <tim.mailer@outlook.com>
+Sent: 12 October 2026 10:00
+To: David Chen <david.chen@contoso.com>
+Subject: Intro from Tim
+
+Hi David,
+
+Could we find 15 minutes next week?
+
+If you'd rather not hear from me, just reply 'stop'.
+
+--_000_AM9PR02MB1234ABCDEF0123456789ABAM9PR02MB1234eurp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><p>Hi Tim,</p><p>Not right now, but try me again in January.</p><p>David</p></body></html>
+
+--_000_AM9PR02MB1234ABCDEF0123456789ABAM9PR02MB1234eurp_--

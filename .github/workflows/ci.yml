@@ -1,0 +1,44 @@
+name: ci
+
+# Tests and a debug build on every push and pull request, on both platforms
+# the app ships for. Release installers are built by release.yml on tags.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-and-build:
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: './src-tauri -> target'
+
+      - run: npm ci
+
+      # Type-check the UI and run the Rust tests (no real email is ever sent:
+      # tests use a fake provider).
+      - name: Test
+        run: npm test
+        timeout-minutes: 20
+
+      - name: Build the app (debug, no installer)
+        run: npx tauri build --debug --no-bundle
+        env:
+          AUTO_MAILER_MS_CLIENT_ID: ${{ vars.AUTO_MAILER_MS_CLIENT_ID }}

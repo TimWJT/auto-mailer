@@ -1,0 +1,18 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Permissions for the main window: file pickers for import/backup/attachments, opening links in the browser, notifications and window state.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "dialog:allow-open",
+    "dialog:allow-save",
+    "dialog:allow-ask",
+    "dialog:allow-confirm",
+    "dialog:allow-message",
+    "opener:allow-open-url",
+    "opener:default",
+    "notification:default",
+    "window-state:default"
+  ]
+}

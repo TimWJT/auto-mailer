@@ -1,0 +1,33 @@
+{
+  "name": "auto-mailer",
+  "version": "0.1.0",
+  "description": "Personalised plain-text email campaigns with automatic follow-ups that stop when someone replies",
+  "private": true,
+  "type": "module",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "npm run check && cargo test --manifest-path src-tauri/Cargo.toml",
+    "tauri": "tauri",
+    "app:dev": "tauri dev",
+    "app:build": "tauri build",
+    "icons": "tauri icon assets/icon.svg"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@tauri-apps/cli": "^2.12.2",
+    "@tsconfig/svelte": "^5.0.8",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.6",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.3",
+    "@tauri-apps/plugin-dialog": "^2.8.2",
+    "@tauri-apps/plugin-notification": "^2.6.0",
+    "@tauri-apps/plugin-opener": "^2.7.1"
+  }
+}

@@ -1,0 +1,59 @@
+[package]
+name = "auto-mailer"
+version = "0.1.0"
+description = "Personalised plain-text email campaigns with automatic follow-ups"
+authors = ["Tim"]
+edition = "2021"
+license-file = "../LICENSE"
+
+[lib]
+name = "auto_mailer_lib"
+crate-type = ["rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+async-imap = { version = "0.12.0", default-features = false, features = ["runtime-tokio"] }
+async-trait = "0.1.92"
+base64 = "0.23.1"
+calamine = "0.36.1"
+chrono = { version = "0.4.45", features = ["serde"] }
+csv = "1.4.0"
+email_address = "0.2.9"
+futures = "0.3.34"
+keyring = "4.2.0"
+lettre = { version = "0.11.23", default-features = false, features = ["builder", "smtp-transport", "tokio1", "tokio1-rustls", "rustls-native-certs", "hostname", "pool", "aws-lc-rs"] }
+mail-parser = "0.11.9"
+rand = "0.10.3"
+reqwest = { version = "0.13.5", features = ["json", "form"] }
+rusqlite = { version = "0.40.2", features = ["backup", "bundled"] }
+rustls-native-certs = "0.8.4"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.152"
+sha2 = "0.11.0"
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-single-instance = "2"
+tauri-plugin-window-state = "2"
+thiserror = "2.0.21"
+tokio = { version = "1.53.2", features = ["rt-multi-thread", "macros", "time", "sync", "net", "io-util", "fs"] }
+tokio-rustls = "0.26.6"
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
+url = "2.5.8"
+uuid = { version = "1.28.0", features = ["v4"] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dev-dependencies]
+chrono-tz = "0.10.4"
+rust_xlsxwriter = "0.99.1"
+tempfile = "3.27.0"

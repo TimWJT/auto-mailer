@@ -1,0 +1,47 @@
+From: Microsoft Outlook
+	<MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@outlook.com>
+To: <tim.mailer@outlook.com>
+Date: Mon, 12 Oct 2026 10:00:20 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="13a2d7e4-1f9b-4b2a-9c39-0f51a2b3c4d5"
+X-MS-Exchange-Message-Is-Ndr:
+Content-Language: en-US
+Message-ID: <a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6@DB9PR02MB5678.eurprd02.prod.outlook.com>
+In-Reply-To: <am-55aa66bb@outlook.com>
+References: <am-55aa66bb@outlook.com>
+Thread-Topic: Intro from Tim
+Subject: Undeliverable: Intro from Tim
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+
+--13a2d7e4-1f9b-4b2a-9c39-0f51a2b3c4d5
+Content-Type: text/plain; charset="us-ascii"
+
+Delivery has failed to these recipients or groups:
+
+gone@contoso.net
+The email address you entered couldn't be found.
+
+--13a2d7e4-1f9b-4b2a-9c39-0f51a2b3c4d5
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;DB9PR02MB5678.eurprd02.prod.outlook.com
+Received-From-MTA: dns;DB9PR02MB5678.eurprd02.prod.outlook.com
+Arrival-Date: Mon, 12 Oct 2026 10:00:18 +0000
+
+Final-Recipient: rfc822;gone@contoso.net
+Action: failed
+Status: 5.1.10
+Diagnostic-Code: smtp;550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient not found by SMTP address lookup
+
+--13a2d7e4-1f9b-4b2a-9c39-0f51a2b3c4d5
+Content-Type: text/rfc822-headers
+
+From: Tim Wang <tim.mailer@outlook.com>
+To: <gone@contoso.net>
+Subject: Intro from Tim
+Date: Mon, 12 Oct 2026 10:00:15 +0000
+Message-ID: <am-55aa66bb@outlook.com>
+MIME-Version: 1.0
+
+--13a2d7e4-1f9b-4b2a-9c39-0f51a2b3c4d5--

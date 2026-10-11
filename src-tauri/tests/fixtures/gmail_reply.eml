@@ -1,0 +1,44 @@
+Delivered-To: tim@mailer.example.com
+Received: by 2002:a05:7300:5a8b:b0:12a:1234:abcd with SMTP id a11csp123456dyb;
+        Tue, 13 Oct 2026 02:14:07 -0700 (PDT)
+MIME-Version: 1.0
+References: <am-1b2c3d4e@mailer.example.com>
+In-Reply-To: <am-1b2c3d4e@mailer.example.com>
+From: Ana Lopez <ana.lopez@example.org>
+Date: Tue, 13 Oct 2026 10:13:52 +0100
+Message-ID: <CAJx7a+Qe1VbX9mP2kR4sT6uW8yZ0aB1cD2eF3gH4iJ5kL6mN7o@mail.gmail.com>
+Subject: Re: Quick question about Acme's hiring
+To: Tim <tim@mailer.example.com>
+Content-Type: multipart/alternative; boundary="000000000000a1b2c3d4e5f60718"
+
+--000000000000a1b2c3d4e5f60718
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Tim,
+
+Thanks for reaching out =E2=80=94 yes, happy to chat. Does Thursday at 2pm wo=
+rk?
+
+Ana
+
+On Mon, 12 Oct 2026 at 09:30, Tim <tim@mailer.example.com> wrote:
+
+> Hi Ana,
+>
+> Would you be open to a quick call about Acme's hiring plans?
+>
+> Tim
+>
+> If you'd rather not hear from me, just reply 'stop'.
+>
+
+--000000000000a1b2c3d4e5f60718
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Tim,<div><br></div><div>Thanks for reaching out =E2=80=94=
+ yes, happy to chat. Does Thursday at 2pm work?</div><div><br></div><div>Ana=
+</div></div>
+
+--000000000000a1b2c3d4e5f60718--
